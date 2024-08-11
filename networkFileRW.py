@@ -1,18 +1,24 @@
 #!/usr/bin/env python3
 #networkFileRW.py
-#Pamela Brauda
-#Thursday, March 3, 2022
+#Jen Blodgett
+#Sunday, August 11, 2024
 #Update routers and switches;
 #read equipment from a file, write updates & errors to file
 
 ##---->>>> Use a try/except clause to import the JSON module
-
+try:
+      import json
+except ImportError:
+      print("could not find json module")
 
 
 ##---->>>> Create file constants for the file names; file constants can be reused
 ##         There are 2 files to read this program: equip_r.txt and equip_s.txt
 ##         There are 2 files to write in this program: updated.txt and errors.txt
-      
+EQUIP_R = 'equip_r.txt'
+EQUIP_S = 'equip_s.txt'
+UPDATED_EQUIP = 'updated.txt'
+BAD_IP = 'errors.txt'
 
 
 
